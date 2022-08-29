@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBC80D6A-30E2-40F6-A580-E46571F5A932}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>R0G_DI7</RootNamespace>
+    <AssemblyName>R0G DI7</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Femfoyou-Angry-Birds-Angry-bird-blue.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAksiyonBitir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAksiyonBitir.Designer.cs">
+      <DependentUpon>FormAksiyonBitir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAksiyonEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAksiyonEkran.Designer.cs">
+      <DependentUpon>FormAksiyonEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAksiyonİşlem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAksiyonİşlem.Designer.cs">
+      <DependentUpon>FormAksiyonİşlem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormArizaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormArizaListesi.Designer.cs">
+      <DependentUpon>FormArizaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBildirimOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBildirimOlustur.Designer.cs">
+      <DependentUpon>FormBildirimOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIncelemeEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIncelemeEkran.Designer.cs">
+      <DependentUpon>FormIncelemeEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIncTamamEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIncTamamEkran.Designer.cs">
+      <DependentUpon>FormIncTamamEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKalArizaİslemAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKalArizaİslemAl.Designer.cs">
+      <DependentUpon>FormKalArizaİslemAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKalislemeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKalislemeal.Designer.cs">
+      <DependentUpon>FormKalislemeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKaliteGoruntuleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKaliteGoruntuleme.Designer.cs">
+      <DependentUpon>FormKaliteGoruntuleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMailGonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMailGonder.Designer.cs">
+      <DependentUpon>FormMailGonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriGoruntule.Designer.cs">
+      <DependentUpon>FormMusteriGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriKayit.Designer.cs">
+      <DependentUpon>FormMusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriSikayet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriSikayet.Designer.cs">
+      <DependentUpon>FormMusteriSikayet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteritoinsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteritoinsert.Designer.cs">
+      <DependentUpon>FormMusteritoinsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSonlandırmaInceleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSonlandırmaInceleme.Designer.cs">
+      <DependentUpon>FormSonlandırmaInceleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSsdBildTamamlanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSsdBildTamamlanan.Designer.cs">
+      <DependentUpon>FormSsdBildTamamlanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTabMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTabMenu.Designer.cs">
+      <DependentUpon>FormTabMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogPanel.Designer.cs">
+      <DependentUpon>FormLogPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTamamlananEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTamamlananEkran.Designer.cs">
+      <DependentUpon>FormTamamlananEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formİncelemeİşlem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formİncelemeİşlem.Designer.cs">
+      <DependentUpon>Formİncelemeİşlem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAksiyonBitir.resx">
+      <DependentUpon>FormAksiyonBitir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAksiyonEkran.resx">
+      <DependentUpon>FormAksiyonEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAksiyonİşlem.resx">
+      <DependentUpon>FormAksiyonİşlem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormArizaListesi.resx">
+      <DependentUpon>FormArizaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBildirimOlustur.resx">
+      <DependentUpon>FormBildirimOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIncelemeEkran.resx">
+      <DependentUpon>FormIncelemeEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIncTamamEkran.resx">
+      <DependentUpon>FormIncTamamEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKalArizaİslemAl.resx">
+      <DependentUpon>FormKalArizaİslemAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKalislemeal.resx">
+      <DependentUpon>FormKalislemeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKaliteGoruntuleme.resx">
+      <DependentUpon>FormKaliteGoruntuleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMailGonder.resx">
+      <DependentUpon>FormMailGonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteriGoruntule.resx">
+      <DependentUpon>FormMusteriGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteriKayit.resx">
+      <DependentUpon>FormMusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteriSikayet.resx">
+      <DependentUpon>FormMusteriSikayet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteritoinsert.resx">
+      <DependentUpon>FormMusteritoinsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSonlandırmaInceleme.resx">
+      <DependentUpon>FormSonlandırmaInceleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSsdBildTamamlanan.resx">
+      <DependentUpon>FormSsdBildTamamlanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTabMenu.resx">
+      <DependentUpon>FormTabMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogPanel.resx">
+      <DependentUpon>FormLogPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTamamlananEkran.resx">
+      <DependentUpon>FormTamamlananEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formİncelemeİşlem.resx">
+      <DependentUpon>Formİncelemeİşlem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_doughnut3d.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_polararea.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newemployee.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupbyresource.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_department.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_doughnut3d1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doughnut.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allowuserstoeditranges.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_area3d.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newemployee1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_mydetails.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_user.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recurrence.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squarified.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlike.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_position_v92.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editquery.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\showworktimeonly.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_bar3dstacked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_bar3dstacked100.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createexplodedpie3dchart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outlookexport.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxps.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_delete.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveandclose.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_lead.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_forbid.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointmentchangedoccurrence.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_warningcircled1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_warningcircled2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ungroup.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_validation.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_security_permission_member.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_rules.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_removecircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlike1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opportunities.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spellcheck.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_opportunity.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newemployee2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_security_permission_type.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_project.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_addcircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsets.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linecolor.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_doughnut3d2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newtablestyle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_bubble3d.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createfullstackedarea3dchart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_bar3dstacked1001.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_funnel3d.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_security_permission_model.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travel_walk.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_sale.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_localization.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thankyounote.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupbyresource1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finishmerge.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipment.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driving.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_vendor.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createrotatedfullstackedcylinderbar3dchart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createrotatedfullstackedcylinderbar3dchart1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_department1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_person.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createstackedbar3dchart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charttype_bar3dstacked1002.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_checkcircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_security_permission_action.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_audit_changehistory.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editextractsource.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\createexplodedpie3dchart1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_addcircled1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_add.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_addcircled2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_checkcircled1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productquickcomparisons.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convertto.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newmail_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertgroupheader_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_employee.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_lead1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_person1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_security_permission_action1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_security.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ide_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x324.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x324.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historyitem_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_opportunity1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Femfoyou-Angry-Birds-Angry-bird-blue.ico" />
+    <Content Include="Pelfusion-Flat-File-Type-Doc.ico" />
+    <None Include="Resources\exporttoepub.svg" />
+    <None Include="Resources\actions_forbid1.svg" />
+    <Content Include="Shaunkleyn-Phlat-Blue-Folders-Bootcamp-Blue.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

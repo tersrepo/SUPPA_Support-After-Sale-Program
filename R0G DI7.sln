@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R0G DI7", "R0G DI7.csproj", "{CBC80D6A-30E2-40F6-A580-E46571F5A932}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SSD Setup", "..\SSD Setup.vdproj", "{E002A120-F98F-49E2-B415-235EA2BA7F28}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SSD Setup V1.3", "..\SSD Setup V1.3\SSD Setup V1.3.vdproj", "{BEFD07DD-AEFF-4AE3-A11A-079063191ACA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBC80D6A-30E2-40F6-A580-E46571F5A932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC80D6A-30E2-40F6-A580-E46571F5A932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC80D6A-30E2-40F6-A580-E46571F5A932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC80D6A-30E2-40F6-A580-E46571F5A932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E002A120-F98F-49E2-B415-235EA2BA7F28}.Debug|Any CPU.ActiveCfg = Debug
+		{E002A120-F98F-49E2-B415-235EA2BA7F28}.Release|Any CPU.ActiveCfg = Release
+		{BEFD07DD-AEFF-4AE3-A11A-079063191ACA}.Debug|Any CPU.ActiveCfg = Debug
+		{BEFD07DD-AEFF-4AE3-A11A-079063191ACA}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97465242-527E-4E54-A983-4E1D1128A3A5}
+	EndGlobalSection
+EndGlobal
