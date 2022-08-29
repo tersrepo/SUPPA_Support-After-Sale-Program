@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="Layer_1" style="enable-background:new 0 0 32 32">
+  <style type="text/css">
+	.Red{fill:#D11C1C;}
+	.Yellow{fill:#FFB115;}
+	.Blue{fill:#1177D7;}
+	.Green{fill:#039C23;}
+	.Black{fill:#727272;}
+	.White{fill:#FFFFFF;}
+	.st0{opacity:0.5;}
+	.st1{opacity:0.75;}
+	.st2{opacity:0.35;}
+	.st3{opacity:0.65;}
+</style>
+  <g id="Area3D">
+    <polygon points="24,30 28,26 28,22 24,26  " class="Yellow" />
+    <g class="st0">
+      <path d="M10,16l-4,4l-6-6l4-4L10,16z M16,10l-4,4l12,12l4-4L16,10z" class="Yellow" />
+      <path d="M14,6l-4,4L4,4l4-4L14,6z M20,0l-4,4l12,12l4-4L20,0z" class="Red" />
+    </g>
+    <polygon points="28,26 32,22 32,12 28,16  " class="Red" />
+    <g class="st1">
+      <polygon points="0,30 0,14 6,20 12,14 24,26 24,30   " class="Yellow" />
+      <polygon points="16,4 10,10 4,4 4,10 10,16 16,10 28,22 28,16   " class="Red" />
+    </g>
+  </g>
+</svg>
